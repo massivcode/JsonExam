@@ -37,6 +37,42 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        api.path("pathExam").enqueue(new Callback<Result>() {
+            @Override
+            public void onResponse(Call<Result> call, Response<Result> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(MainActivity.this, "성공!", Toast.LENGTH_SHORT).show();
+                    System.out.println(response.body());
+                } else {
+                    Toast.makeText(MainActivity.this, "실패!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+
+            @Override
+            public void onFailure(Call<Result> call, Throwable t) {
+                t.printStackTrace();
+            }
+        });
+
+        api.query("asdasd").enqueue(new Callback<Result>() {
+            @Override
+            public void onResponse(Call<Result> call, Response<Result> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(MainActivity.this, "성공!", Toast.LENGTH_SHORT).show();
+                    System.out.println(response.body());
+                } else {
+                    Toast.makeText(MainActivity.this, "실패!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Result> call, Throwable t) {
+                t.printStackTrace();
+            }
+        });
+
+
     }
 
 }
