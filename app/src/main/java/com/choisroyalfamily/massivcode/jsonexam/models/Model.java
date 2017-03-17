@@ -1,4 +1,4 @@
-package com.choisroyalfamily.massivcode.jsonexam;
+package com.choisroyalfamily.massivcode.jsonexam.models;
 
 import com.google.gson.annotations.SerializedName;
 

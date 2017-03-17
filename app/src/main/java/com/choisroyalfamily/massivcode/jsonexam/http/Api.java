@@ -1,4 +1,8 @@
-package com.choisroyalfamily.massivcode.jsonexam;
+package com.choisroyalfamily.massivcode.jsonexam.http;
+
+import com.choisroyalfamily.massivcode.jsonexam.models.Image;
+import com.choisroyalfamily.massivcode.jsonexam.models.Model;
+import com.choisroyalfamily.massivcode.jsonexam.models.Result;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -18,4 +22,8 @@ public interface Api {
 
     @GET("query")
     Call<Result> query(@Query("input") String input);
+
+    @GET("image")
+    Call<Image> getRandomImage();
+
 }

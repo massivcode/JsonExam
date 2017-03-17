@@ -1,4 +1,4 @@
-package com.choisroyalfamily.massivcode.jsonexam;
+package com.choisroyalfamily.massivcode.jsonexam.models;
 
 /**
  * Created by massivcode on 2017-03-17.

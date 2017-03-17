@@ -1,4 +1,4 @@
-package com.choisroyalfamily.massivcode.jsonexam;
+package com.choisroyalfamily.massivcode.jsonexam.http;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
